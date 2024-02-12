@@ -49,12 +49,12 @@ const getLastPost = async function () {
 // top level await
 
 const lastPost2 = await getLastPost();
-console.log(lastPost2);
+// console.log(lastPost2);
 
 
 // module pattern - closure pattern - 
 // scoped to function
-
+/* 
 const shoppingCart2 = (function () {
   const cart = [];
   const addToCart = function (product, quantity) {
@@ -80,5 +80,11 @@ shoppingCart2.addToCart('ananas', 40);
 
 console.log(shoppingCart2.totalPrice);
 console.log(shoppingCart2);
+
+ */
+
+import cloneDeep from '/node_modules/lodash-es/cloneDeep.js'; 
+
+
 
 
